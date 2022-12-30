@@ -1,0 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-in-docker
+{
+	"name": "Swoole DevContainer",
+	"dockerComposeFile": "compose.yml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"postCreateCommand": "composer update",
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"bmewburn.vscode-intelephense-client",
+				"neilbrayfield.php-docblocker",
+				"MehediDracula.php-namespace-resolver",
+				"humao.rest-client",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root"
+}
