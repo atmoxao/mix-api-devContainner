@@ -2,3 +2,6 @@ GET http://localhost:9501/hello
 
 ###
 GET http://localhost:9501/users/1
+
+###
+GET http://localhost:9501/auth
