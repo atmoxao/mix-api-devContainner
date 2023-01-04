@@ -1,4 +1,5 @@
-FROM hyperf/hyperf:7.4-alpine-v3.12-swoole
+# FROM hyperf/hyperf:7.4-alpine-v3.12-swoole
+FROM phpswoole/swoole:4.6.1-php7.4-alpine
 
 ARG timezone
 
